@@ -11,7 +11,7 @@ def predict(img):
     # ネットワークの準備
     net = Net().cpu().eval()
     # # 学習済みモデルの重み（yakiniku.pt）を読み込み
-    net.load_state_dict(torch.load('./src/yakiniku.pt', map_location=torch.device('cpu')))
+    net.load_state_dict(torch.load('./yakiniku.pt', map_location=torch.device('cpu')))
     #　データの前処理
     img = transform(img)
     img =img.unsqueeze(0) # 1次元増やす
