@@ -25,7 +25,7 @@ class Net(pl.LightningModule):
 
         #学習時に使ったのと同じ学習済みモデルを定義
         self.feature = resnet34(pretrained=True) 
-        self.fc = nn.Linear(1000, 11)
+        self.fc = nn.Linear(1000, 12)
 
     def forward(self, x):
         #学習時に使ったのと同じ順伝播

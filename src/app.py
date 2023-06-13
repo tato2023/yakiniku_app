@@ -42,6 +42,8 @@ def getName(label):
     elif label==9:
         return 'サーロイン: SIRLOIN'
     elif label==10:
+        return 'トモサンカク: TOMOSANKAKU'
+    elif label==11:
         return 'タン: TONGUE'
  
 #　推論したラベルからyakinikuの部位のイラストを返す関数
@@ -67,6 +69,8 @@ def getIllustration(label):
     elif label==9:
         return '部位図サーロイン.png'
     elif label==10:
+        return '部位図トモサンカク.png'
+    elif label==11:
         return '部位図タン.png'
 
 
